@@ -83,3 +83,5 @@ This research evaluates recordings from the **PC-GITA** Spanish speech database:
   pages={2175--2175},
   year={2014}
 }
+
+Due to license restrictions and file size, the PC-GITA raw audio dataset is not hosted in this repository. Researchers can request access from the original dataset providers
