@@ -11,6 +11,8 @@ This repository presents a non-invasive, objective, and low-cost screening frame
 • Image Enhancement & Preprocessing:  Grayscale conversion, median/Gaussian filtering, edge detection/blending, log-amplitude dynamic range compression, and Min-Max scaling. Class-wise data augmentation (rotation, flipping, color jitter, resized crop) balances the dataset to 1,000 spectrogram images and 500 formant images per class.
 • Deep Feature Extraction:  Ten deep backbones (ViT, InceptionV3, DenseNet121, ResNet50, VGG16, MobileNetV2, EfficientNetB0, AlexNet, Xception, CustomCNN) extract compact, high-level feature embeddings from preprocessed images.
 • Classification & Decision:  Deep feature vectors are classified into Parkinson's Disease (PD) and Healthy Control (HC) using nine machine learning classifiers (Logistic Regression, SVM, Random Forest, AdaBoost, Gradient Boosting, Extra Trees, KNN, Decision Tree, Naïve Bayes).
+
+```text
 [Raw Audio (.wav) - PC-GITA]
                  │
                  ▼
@@ -31,7 +33,7 @@ This repository presents a non-invasive, objective, and low-cost screening frame
        └────────────────┬────────────────┘
                         ▼
                  [Prediction: PD vs HC]
-3. Key Findings & Experimental Results
+4. Key Findings & Experimental Results
 A comprehensive comparison across representations and classifiers reveals superior performance when pairing deep visual embeddings with lightweight linear classification:
 Feature Modality	Best Feature Extractor	Best Classifier	Accuracy	Precision	Recall	F1-Score
 Spectrogram	Vision Transformer (ViT)	Logistic Regression	99.00%	97.04%	98.50%	97.77%
